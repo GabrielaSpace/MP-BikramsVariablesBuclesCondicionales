@@ -28,7 +28,7 @@ resultadoAntes = ++incrementarAntes;
 //Bucles
 //10.- Crear variable contarHasta10_2 con valor 0 e incrementar su valor con un bucle for hasta que se verifique que contarHasta10_2 === 10
 let contarHasta10_2 = 0;
-for(contarHasta10_2 =i; i =10;i++){
+for(let i=0; i <10;i++){
     contarHasta10_2++;
     
 }
@@ -38,24 +38,22 @@ for(contarHasta10_2 =i; i =10;i++){
 let postI = 0;
 let postJ = 0;
 
-for(postJ = i; i <11; i++){
+for(let i= 0; i <11; i++){
     postI+= postJ++;
-    i++;
+   
 }
 
 // 12.- Crear la variable sumaPares con valor 0 a continuación crea un bucle que itere 10 veces (i < 10) si la iteración es par se deberá sumar a sumaPares el número de la iteración actual (i)
 
  let sumaPares = 0;
  
- for (let i=0; i<10; i++){
-    if (sumaPares%2===0) {
+ for (let i=0; i <10; i++){
+    if (i%2===0) {
         sumaPares+=i;
     } else{
 
     }
  }
-
-
  //Iteraciones :european_castle: proyecto individual :european_castle:
 
  //VARIABLES
@@ -66,7 +64,7 @@ let variableValorNumerico = 2;
 
 // 14.- Crear variable tipo const de nombre MiNombre declarada con valor tu nombre
 
-let MiNombre = 'Gabriela';
+const MiNombre = 'Gabriela';
 
 // 15.- Crear variable tipo const de nombre MiNumeroFav declarada con valor numérico
 
@@ -110,21 +108,25 @@ let valorDivision =  MiNumeroFav/3;
 //24.- Crear variable contarHasta10 con valor 0 e incrementar su valor con un bucle while hasta que se verifique que contarHasta10 === 10
 
 let contarHasta10 =0;
-while (contarHasta10 ===10) {
-    contarHasta10++;
+let i=0;
+
+while (i < 10) {
+    i++;
+    contarHasta10 += i;
+    if(contarHasta10 === 10){
+        break;
+    }
 }
 
 // 25.- Crear las variables preI y preJ con valor 0 a continuación cree un bucle que itere 11 veces. En cada iteración se deberá sumar al valor de preI el valor de ++preJ
 
+
 let preI = 0;
-let preJ = 0;
+let preJ =0;
+for(let i=0; i<11; i++){
 
-for(preI; preI<11; preI++){
-
-    preI += preJ++;
-
+    preI+= ++preJ
 }
-
 
 
 // 26.- Crear la variable sumaImpares con valor 0 a continuación crea un bucle que itere 10 veces (i < 10) si la iteración es impar se deberá sumar a sumaImpares el número de la iteración actual (i)
