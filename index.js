@@ -15,7 +15,7 @@ let booleanoAnd = booleano1 && booleano2;
 //6.- Crear variable booleanoNot cuyo valor sea la compracación booleana no booleano1
 let booleanoNot =  !booleano1;
 // 7.- Crear variable booleanoMix0 cuyo valor sea la compración booleana (booleano1 or booleano2) and (booleano1 or (not booleano1 and not booleano2)
-let booleanoMix0 = (booleano1||booleano2)&&((booleano1||!booleano2));
+let booleanoMix0 = (booleano1||booleano2)&&((booleano1||(!booleano1&&!booleano2)));
 
 //OPERADORES
 // 8.- Crear variable incrementarDesp con valor 2 y asigna su valor con postincremento a resultadoDesp
@@ -39,7 +39,8 @@ let postI = 0;
 let postJ = 0;
 
 for(postJ = i; i <11; i++){
-    postI+= postJ++
+    postI+= postJ++;
+    i++;
 }
 
 // 12.- Crear la variable sumaPares con valor 0 a continuación crea un bucle que itere 10 veces (i < 10) si la iteración es par se deberá sumar a sumaPares el número de la iteración actual (i)
@@ -118,6 +119,12 @@ while (contarHasta10 ===10) {
 let preI = 0;
 let preJ = 0;
 
+for(preI; preI<11; preI++){
+
+    preI += preJ++;
+
+}
+
 
 
 // 26.- Crear la variable sumaImpares con valor 0 a continuación crea un bucle que itere 10 veces (i < 10) si la iteración es impar se deberá sumar a sumaImpares el número de la iteración actual (i)
@@ -125,8 +132,8 @@ let preJ = 0;
 let sumaImpares =0;
 
 for(let i = 0; i < 10; i++){
-    i++;
-    if(i%2 != 0){
+
+    if(i%2 !== 0){
         sumaImpares +=i;
     }
 }
