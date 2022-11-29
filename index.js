@@ -1,3 +1,5 @@
+//SOLUCIÓN
+
 //VARIABLES
 // 1.- Crear variable tipo let de nombre variableSinValor declarada sin valor
 let variableSinValor;
